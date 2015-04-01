@@ -15,6 +15,8 @@
 		FA38CE3E1ACBBB3A0068C78C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA38CE3D1ACBBB3A0068C78C /* Images.xcassets */; };
 		FA38CE411ACBBB3A0068C78C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA38CE3F1ACBBB3A0068C78C /* LaunchScreen.xib */; };
 		FA38CE4D1ACBBB3A0068C78C /* Game_of_Life___iOS_EntryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA38CE4C1ACBBB3A0068C78C /* Game_of_Life___iOS_EntryTests.m */; };
+		FA7E914A1ACC463D00C750F8 /* LifeHttpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7E91491ACC463D00C750F8 /* LifeHttpConnection.m */; };
+		FA7E914C1ACC59A100C750F8 /* HTTPJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7E914B1ACC59A100C750F8 /* HTTPJSONResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		FA38CE461ACBBB3A0068C78C /* Game of Life - iOS EntryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game of Life - iOS EntryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA38CE4B1ACBBB3A0068C78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA38CE4C1ACBBB3A0068C78C /* Game_of_Life___iOS_EntryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Game_of_Life___iOS_EntryTests.m"; sourceTree = "<group>"; };
+		FA7E91481ACC45E900C750F8 /* LifeHttpConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeHttpConnection.h; sourceTree = "<group>"; };
+		FA7E91491ACC463D00C750F8 /* LifeHttpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeHttpConnection.m; sourceTree = "<group>"; };
+		FA7E914B1ACC59A100C750F8 /* HTTPJSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPJSONResponse.m; sourceTree = "<group>"; };
+		FA7E914D1ACC59B000C750F8 /* HTTPJSONResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPJSONResponse.h; sourceTree = "<group>"; };
 		FD68D6BBF93443C453862687 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +119,10 @@
 				FA38CE3D1ACBBB3A0068C78C /* Images.xcassets */,
 				FA38CE3F1ACBBB3A0068C78C /* LaunchScreen.xib */,
 				FA38CE301ACBBB3A0068C78C /* Supporting Files */,
+				FA7E91481ACC45E900C750F8 /* LifeHttpConnection.h */,
+				FA7E91491ACC463D00C750F8 /* LifeHttpConnection.m */,
+				FA7E914B1ACC59A100C750F8 /* HTTPJSONResponse.m */,
+				FA7E914D1ACC59B000C750F8 /* HTTPJSONResponse.h */,
 			);
 			path = "Game of Life - iOS Entry";
 			sourceTree = "<group>";
@@ -278,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7E914C1ACC59A100C750F8 /* HTTPJSONResponse.m in Sources */,
 				FA38CE391ACBBB3A0068C78C /* ViewController.m in Sources */,
 				FA38CE361ACBBB3A0068C78C /* AppDelegate.m in Sources */,
 				FA38CE331ACBBB3A0068C78C /* main.m in Sources */,
+				FA7E914A1ACC463D00C750F8 /* LifeHttpConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@ PODS:
 
 DEPENDENCIES:
   - CocoaHTTPServer (~> 2.3)
+  - CocoaLumberjack (~> 2.0)
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 7cbf214b27f8e7f7574db6a3fd96352ffaed433d
