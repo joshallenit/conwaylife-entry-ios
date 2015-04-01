@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CCF93EB3F31337E6D5234628"
-               BuildableName = "libPods-CocoaHTTPServer.a"
-               BlueprintName = "Pods-CocoaHTTPServer"
+               BlueprintIdentifier = "EB3CFB763E51EB305255F23C"
+               BuildableName = "libPods.a"
+               BlueprintName = "Pods"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EB3CFB763E51EB305255F23C"
+            BuildableName = "libPods.a"
+            BlueprintName = "Pods"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

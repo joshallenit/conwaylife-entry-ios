@@ -13,6 +13,7 @@ PODS:
     - CocoaLumberjack/Default
 
 DEPENDENCIES:
+  - CocoaAsyncSocket (~> 7.4)
   - CocoaHTTPServer (~> 2.3)
   - CocoaLumberjack (~> 2.0)
 

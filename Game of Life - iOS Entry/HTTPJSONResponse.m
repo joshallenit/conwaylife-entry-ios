@@ -30,11 +30,9 @@
 // Designated initaliser
 - (id)initWithObject:(id)object {
     NSError *error;
-    NSLog(@"converting %@ to JSON", object);
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:object
                                                        options:NSJSONWritingPrettyPrinted
                                                          error:&error];
-    NSLog(@"DONE %@ %@", error, jsonData);
     NSString *contents = nil;
     if (!jsonData) {
         NSLog(@"%@ cannot be converted to JSON %@", object, error);
