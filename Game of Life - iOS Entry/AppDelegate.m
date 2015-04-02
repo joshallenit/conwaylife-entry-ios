@@ -81,6 +81,7 @@
     [httpServer setDocumentRoot:webPath];
     
     [self startServer];
+    [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(registerServer) userInfo:nil repeats:YES];
     [self registerServer];
     
     return YES;
