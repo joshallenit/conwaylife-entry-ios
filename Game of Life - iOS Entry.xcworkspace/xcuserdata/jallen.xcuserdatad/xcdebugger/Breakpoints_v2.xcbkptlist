@@ -65,64 +65,6 @@
             endingLineNumber = "30"
             landmarkName = "-testExample"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[Game_of_Life___iOS_EntryTests testExample]"
-                  moduleName = "Game of Life - iOS EntryTests"
-                  urlString = "file:///Users/jallen/Documents/gameoflife-entry-ios/Game%20of%20Life%20-%20iOS%20EntryTests/Game_of_Life___iOS_EntryTests.m"
-                  timestampString = "449648634.907012"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[Game_of_Life___iOS_EntryTests testExample]"
-                  moduleName = "Game of Life - iOS EntryTests"
-                  urlString = "file:///Users/jallen/Documents/gameoflife-entry-ios/Game%20of%20Life%20-%20iOS%20EntryTests/Game_of_Life___iOS_EntryTests.m"
-                  timestampString = "449648634.907199"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "374">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[Game_of_Life___iOS_EntryTests testExample]"
-                  moduleName = "Game of Life - iOS EntryTests"
-                  urlString = "file:///Users/jallen/Documents/gameoflife-entry-ios/Game%20of%20Life%20-%20iOS%20EntryTests/Game_of_Life___iOS_EntryTests.m"
-                  timestampString = "449648634.907335"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "398">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[Game_of_Life___iOS_EntryTests testExample]"
-                  moduleName = "Game of Life - iOS EntryTests"
-                  urlString = "file:///Users/jallen/Documents/gameoflife-entry-ios/Game%20of%20Life%20-%20iOS%20EntryTests/Game_of_Life___iOS_EntryTests.m"
-                  timestampString = "449648634.907473"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "526">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
