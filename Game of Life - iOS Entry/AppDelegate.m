@@ -41,7 +41,7 @@
     NSURL *url = [NSURL URLWithString:urlAsString];
     
     NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
-    NSString *body = @"name=Red Team&port=4000";
+    NSString *body = @"name=Red Team&port=4000&onColor=#ff0000&offColor=#eeeeee";
     req.HTTPBody = [body dataUsingEncoding:NSUTF8StringEncoding];
     req.HTTPMethod = @"PUT";
     
