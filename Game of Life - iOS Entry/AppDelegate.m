@@ -33,6 +33,23 @@
     }
 }
 
+- (void)registerServer
+{
+    NSLog(@"registering ourselves with server");
+    NSString *urlAsString = @"http://localhost:9000/register";
+    
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
+    NSString *body = @"name=Red Team&port=4000";
+    req.HTTPBody = [body dataUsingEncoding:NSUTF8StringEncoding];
+    req.HTTPMethod = @"PUT";
+    
+    [req setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:req delegate:self];
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Configure our logging framework.
     // To keep things simple and fast, we're just going to log to the Xcode console.
@@ -54,7 +71,6 @@
     if ([arguments count] == 3) {
         port = [arguments[2] intValue];
     }
-    NSLog(@"PORT WE ARE using is %d, %@ %d", port, arguments, [arguments count]);
     [httpServer setPort:port];
     
     // Serve files from our embedded Web folder
@@ -64,8 +80,16 @@
     [httpServer setDocumentRoot:webPath];
     
     [self startServer];
+    [self registerServer];
     
     return YES;
+}
+
+/*
+ if there is an error occured, this method will be called by connection
+ */
+-(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
+    NSLog(@"%@" , error);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -81,12 +105,12 @@
     // restart the server when the app is resumed (based on this document: http://developer.apple.com/library/ios/#technotes/tn2277/_index.html )
     
     [httpServer stop];
-
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     [self startServer];
+    [self registerServer];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
