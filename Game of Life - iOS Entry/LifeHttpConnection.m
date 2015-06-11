@@ -41,14 +41,14 @@
         if (jsonParsingError) {
             NSLog(@"Could not parse grid %@ %@", gridParam, jsonParsingError);
         }
-        
+
         GameOfLife *game = [[GameOfLife alloc] init];
         NSArray *newGrid = [game iterate:grid];
         
         return [[HTTPJSONResponse alloc] initWithObject:newGrid];
     }
     else {
-        return [[HTTPJSONResponse alloc] initWithObject:@{@"result": @"404"}];
+        return [[HTTPJSONResponse alloc] initWithObject:@{@"result": @"404", @"path": relativePath}];
     }
     
     return [super httpResponseForMethod:method URI:path];

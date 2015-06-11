@@ -17,9 +17,9 @@
     return count;
 }
 
-- (NSArray*) numNeighbours:(NSArray*)grid
+- (NSArray*) iterate:(NSArray *)grid
 {
-    return nil;
+    return @[];
 }
 
 @end
