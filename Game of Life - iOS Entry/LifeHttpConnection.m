@@ -11,12 +11,12 @@
 #import "HTTPDynamicFileResponse.h"
 #import "HTTPJSONResponse.h"
 #import <CocoaLumberjack/CocoaLumberjack.h>
+#import "GameOfLife.h"
 
 @implementation LifeHttpConnection
 
 - (NSObject<HTTPResponse> *)httpResponseForMethod:(NSString *)method URI:(NSString *)path
 {
-    
     NSString *filePath = [self filePathForURI:path];
     NSString *documentRoot = [config documentRoot];
     
@@ -42,7 +42,10 @@
             NSLog(@"Could not parse grid %@ %@", gridParam, jsonParsingError);
         }
         
-        return [[HTTPJSONResponse alloc] initWithObject:grid];
+        GameOfLife *game = [[GameOfLife alloc] init];
+        NSArray *newGrid = [game iterate:grid];
+        
+        return [[HTTPJSONResponse alloc] initWithObject:newGrid];
     }
     else {
         return [[HTTPJSONResponse alloc] initWithObject:@{@"result": @"404"}];

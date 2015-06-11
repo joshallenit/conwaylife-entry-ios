@@ -36,7 +36,6 @@
 - (void)registerServer
 {
     NSLog(@"registering ourselves with server");
-    // 192.168.0.236 - Josh's laptop on MakeWorks5G
     NSString *urlAsString = @"http://192.168.0.236:9000/register";
     
     NSURL *url = [NSURL URLWithString:urlAsString];
